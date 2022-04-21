@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GROOVY WORLD | Login/Sign up</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav nav_top">
+        <div class="logo">
+        <a href="Ecommerce 1.html"> <img src="images/GROOVY.jpg" width="100"></a>
+        </div>
+        <div class="nav_side">
+          <a class="op" href="about.html">About Us</a>
+          <a class="op" href="service.html">Services</a>
+          <a class="op" href="blog.html">Blogs</a>
+          <a class="op" href="contact.html">Contact</a>
+          <a class="op" href="login.html">Login/Register</a>
+        </div>
+       </nav>
+
+
+<div class="zero">
+ 
+    <div class="form_box">
+        <h1>Login</h1>
+        <form action="" method="post">
+            <div class="txt_field">
+                <input type="text" required>
+                  <span></span>
+                <label for="">Username</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" required>
+                  <span></span>
+                <label for="">Password</label>
+            </div>
+            <div class="pass">Forgot Password?</div>
+               <input type="submit" value="Login">
+            <div class="signup_link">
+                Not a member? <a href="#">Sign up</a>
+            </div>
+        </form>
+    </div>
+   
+</div>
+
+      
+      <footer>
+            <div class="footer_logo">
+              <a class="nav-logo" href="Ecommerce 1.html"><img src="images/GROOVY.jpg" class="img-fluid" alt="logo" width="100"></a>
+            </div>
+            <div id="foot" class="pages">
+                <h3>pages</h3>
+                <a class="leg" href="about.html">About us</a> |
+                <a class="leg" href="service.html">Services</a> |
+                <a class="leg" href="blog.html">Blogs</a> |
+                <a class="leg" href="contact.html">contact</a> |
+                <a class="leg" href="login.html">login</a> 
+            </div>
+            <div class="doc">
+                <h3>documents</h3>
+              <a class="leg" href="">Privacy policy</a> |
+              <a class="leg" href="">terms of user</a> |
+              <a class="leg" href="">refund policy</a> |
+            </div>
+            <div class="social">
+              <h3>follow us</h3>
+              <a class="jod" href="https://www.facebook.com/1Stopai-102490171820303/" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a> 
+              <a class="jod" href=""><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a> 
+              <a class="jod" href=""><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+          </div>
+          <div class="contact">
+              <h3>contact us</h3>
+            <a class="jod" href="https://api.WhatsApp.com/send?phone=+919876543210" target="_blank"><i class="fa fa-phone fa-lg" aria-hidden="true"></i></a>
+            <a class="jod" href="mailto: as78@gmail.com"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
+          </div>
+            <hr>
+      <p>copyright &copy; 2022 Groovy World. All rights reserved</p>
+      </footer>
+
+      <script>
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbyXXifJbSE6CO_N5GBvbw7ZbUG-xH3E_wKBdieWnXxUWKeLmgfoLPYqRZfSXSrGhvha/exec'
+        const form = document.forms['Ecommerce-googlesheet']
+      
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => alert(
+                    "Thanks for you valuable feedback!!!"))
+                .catch(error => console.error('Error!', error.message))
+        })
+      
+      </script>
+</body>
+</html>
